@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="شركة مصنع الزرافة - أصالة فلسطينية منذ أكثر من 60 عاماً في صناعة الطحينة والحلاوة وزيت السمسم. جودة عالية وطعم أصيل من قلب نابلس.">
+    <meta name="keywords" content="طحينة، حلاوة، زيت سمسم، قزحة، مصنع الزرافة، نابلس، فلسطين، تجارة جملة">
+    <meta name="author" content="شركة مصنع الزرافة">
+    <title>شركة مصنع الزرافة | الزرافة معك على طول</title>
+    <link rel="icon" type="image/png" href="https://i.postimg.cc/5ySp18tX/IMG-5561.png">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&family=Cairo:wght@400;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,600;0,800;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="Loading..." class="loader-logo" referrerPolicy="no-referrer">
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Giraffe Progress Indicator -->
+    <div class="giraffe-progress">
+        <div class="giraffe-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <!-- Decorative Giraffe Neck -->
+    <div class="giraffe-neck-container">
+        <img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="" class="giraffe-neck-img" id="giraffe-neck">
+    </div>
+
+    <!-- Background Blobs & Watermark Container -->
+    <div class="blob-container">
+        <div class="bg-blob blob-1"></div>
+        <div class="bg-blob blob-2"></div>
+        <div class="bg-blob blob-3"></div>
+        <!-- Giraffe Watermark -->
+        <div class="giraffe-watermark">
+            <img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="" referrerPolicy="no-referrer">
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header id="main-header">
+        <div class="container header-flex">
+            <div class="logo-area">
+                <a href="#home" class="logo-link">
+                    <img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="شعار شركة مصنع الزرافة" class="main-logo" referrerPolicy="no-referrer">
+                    <span class="company-name">مصنع <span class="text-red">الزرافة</span></span>
+                </a>
+            </div>
+            
+            <nav id="main-nav">
+                <button class="menu-close" aria-label="Close Menu">×</button>
+                <ul class="nav-links">
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">قصتنا</a></li>
+                    <li><a href="#products">منتجاتنا</a></li>
+                    <li><a href="#delivery">التوصيل</a></li>
+                    <li><a href="#wholesale">تجارة الجملة</a></li>
+                    <li><a href="#testimonials">آراء عملائنا</a></li>
+                    <li><a href="#community">مجتمعنا</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn-header-cta">اطلب الآن</a>
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tahini Scroll Sequence Hero -->
+    <section id="tahini-scroll-hero">
+        <div class="sticky-wrapper">
+            <canvas id="tahini-canvas"></canvas>
+            <div class="hero-overlay">
+                <div class="container">
+                    <div class="hero-text-content">
+                        <h1 class="scroll-title">نقاء الطبيعة <br>في كل قطرة</h1>
+                        <p class="scroll-subtitle">شاهد كيف تولد طحينة الزرافة من قلب الطبيعة</p>
+                    </div>
+                </div>
+            </div>
+            <div id="hero-loader">
+                <div class="loader-spinner"></div>
+                <div class="loader-progress-container">
+                    <div id="hero-loader-bar"></div>
+                </div>
+                <p id="hero-loader-text">جاري تحميل التجربة البصرية... <span id="hero-loader-percent">0%</span></p>
+                <button id="hero-skip-btn" class="hidden">تخطي التحميل</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="sesame-seed seed-1"></div>
+        <div class="sesame-seed seed-2"></div>
+        <div class="sesame-seed seed-3"></div>
+        <div class="container">
+            <div class="hero-flex">
+                <div class="hero-image">
+                    <div class="hero-circle-bg"></div>
+                    <img src="https://i.postimg.cc/Vktt9Q3C/IMG-0631.png" alt="طحينة الزرافة الفاخرة" class="floating-img hero-main-img">
+                </div>
+                <div class="hero-content">
+                    <span class="badge-heritage">أصالة فلسطينية منذ 1964</span>
+                    <h1>طحينة وحلاوة الزرافة <br><span class="text-sky-blue">سر الطعم الأصيل</span></h1>
+                    <p>نقدم لكم أفخر أنواع الطحينة المحضرة من أجود بذور السمسم، والحلاوة الطحينية التي تذوب في الفم، لننقل عبق التراث الفلسطيني إلى مائدتكم بجودة لا تضاهى.</p>
+                    <div class="hero-btns">
+                        <a href="#products" class="btn btn-primary">اكتشف منتجاتنا</a>
+                        <a href="#about" class="btn btn-secondary">قصتنا</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Organic Divider -->
+    <div class="tahini-drip-divider">
+        <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H1440V60C1440 60 1320 120 1080 120C840 120 720 0 480 0C240 0 120 60 0 60V0Z" fill="var(--color-tahini-cream)"/>
+        </svg>
+    </div>
+    <section id="about" class="about">
+        <div class="about-parallax-bg"></div>
+        <div class="container about-flex">
+            <div class="about-img reveal-right">
+                <img src="https://i.postimg.cc/c4rC9VVm/IMG_0953.png" alt="جميع منتجات الزرافة" class="rounded-img" referrerPolicy="no-referrer" loading="lazy">
+            </div>
+            <div class="about-content reveal-left delay-1">
+                <h2 class="section-title giraffe-accent"><img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="" class="title-icon"> أصالة فلسطينية عريقة</h2>
+                <p>تأسس مصنع الزرافة في مدينة نابلس، وتحديداً في شارع بلاطة عسكر، ليكون منارة لصناعة منتجات السمسم التقليدية. على مدار ستة عقود، حافظنا على سر المهنة والجودة التي جعلت اسم "الزرافة" مرادفاً للثقة في كل بيت فلسطيني.</p>
+                <p>نعتمد في تصنيعنا على أجود أنواع السمسم المختار بعناية، ونستخدم طرقاً طبيعية وصحية تضمن الحفاظ على النكهة الأصيلة والقوام المثالي.</p>
+                <div class="stats-grid">
+                    <div class="stat-card reveal-scale">
+                        <span class="stat-num">60+</span>
+                        <span class="stat-label">سنة خبرة</span>
+                    </div>
+                    <div class="stat-card reveal-scale delay-1">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">طبيعي</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Zirafah Section -->
+    <section id="why-zirafah" class="why-zirafah">
+        <div class="container">
+            <div class="why-flex">
+                <div class="why-content reveal-right">
+                    <h2 class="section-title giraffe-accent"><img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="" class="title-icon"> لماذا الزرافة؟</h2>
+                    <p class="playful-story">سمسم مختار بعناية من أفضل المصادر</p>
+                    <ul class="why-list reveal-left">
+                        <li>تحميص متوازن يمنح الطحينة نكهتها الغنية</li>
+                        <li>قوام ناعم وطعم أصيل</li>
+                        <li>إنتاج وفق أعلى معايير الجودة والنظافة</li>
+                        <li>خبرة طويلة في صناعة الطحينة والسمسم</li>
+                    </ul>
+                </div>
+                <div class="why-image reveal-left delay-1">
+                    <div class="giraffe-illustration">
+                        <img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="Zirafah Illustration" class="floating-giraffe" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title giraffe-accent"><img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="" class="title-icon"> منتجاتنا المتميزة</h2>
+                <p class="section-subtitle">نكهة تقليدية متوارثة في كل قطرة</p>
+            </div>
+
+            <div class="product-filters reveal">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="tahini">طحينة</button>
+                <button class="filter-btn" data-filter="halawa">حلاوة</button>
+                <button class="filter-btn" data-filter="oil">زيوت</button>
+                <button class="filter-btn" data-filter="other">أخرى</button>
+            </div>
+
+            <div class="product-grid reveal" id="product-grid">
+                <!-- Tahini 400g -->
+                <div class="product-card" data-category="tahini" data-id="1">
+                    <div class="product-img">
+                        <img src="https://i.postimg.cc/GhWLM9Fg/IMG_0631.jpg" alt="مرطبان طحينة حجم ٤٠٠ جرام" referrerPolicy="no-referrer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>مرطبان طحينة حجم ٤٠٠ جرام</h3>
+                        <p>طحينة فاخرة مصنوعة من أجود أنواع السمسم.</p>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(48)</span>
+                            </div>
+                            <div class="share-btns">
+                                <button class="share-btn fb">f</button>
+                                <button class="share-btn wa">w</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tahini 900g -->
+                <div class="product-card" data-category="tahini" data-id="2">
+                    <div class="product-img">
+                        <img src="https://i.postimg.cc/GhWLM9Fg/IMG_0631.jpg" alt="مرطبان طحينة حجم ٩٠٠ جرام" referrerPolicy="no-referrer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>مرطبان طحينة حجم ٩٠٠ جرام</h3>
+                        <p>طحينة فاخرة بحجم عائلي أكبر.</p>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(52)</span>
+                            </div>
+                            <div class="share-btns">
+                                <button class="share-btn fb">f</button>
+                                <button class="share-btn wa">w</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tahini 1.5L -->
+                <div class="product-card" data-category="tahini" data-id="3">
+                    <div class="product-img">
+                        <img src="https://i.postimg.cc/JnQdQf4P/IMG-0637.png" alt="قنينة طحينة حجم لتر و نصف" referrerPolicy="no-referrer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>قنينة طحينة حجم لتر و نصف</h3>
+                        <p>طحينة الزرافة الفاخرة في قنينة سهلة الاستخدام.</p>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(36)</span>
+                            </div>
+                            <div class="share-btns">
+                                <button class="share-btn fb">f</button>
+                                <button class="share-btn wa">w</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tahini 3kg -->
+                <div class="product-card" data-category="tahini" data-id="4">
+                    <div class="product-img">
+                        <img src="https://i.postimg.cc/sXJ0JkD7/IMG-0636.png" alt="سطل طحينة حجم ٣ كيلوغرام" referrerPolicy="no-referrer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>سطل طحينة حجم ٣ كيلوغرام</h3>
+                        <p>مثالي للمطاعم والاستخدام الكثيف.</p>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(29)</span>
+                            </div>
+                            <div class="share-btns">
+                                <button class="share-btn fb">f</button>
+                                <button class="share-btn wa">w</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tahini 15kg -->
+                <div class="product-card" data-category="tahini" data-id="5">
+                    <div class="product-img">
+                        <img src="https://i.postimg.cc/4d1F1DN8/IMG-0639.png" alt="تنكة طحينة حجم ١٥ كيلوغرام" referrerPolicy="no-referrer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>تنكة طحينة حجم ١٥ كيلوغرام</h3>
+                        <p>الحجم الأكبر للاستخدام التجاري والصناعي.</p>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(18)</span>
+                            </div>
+                            <div class="share-btns">
+                                <button class="share-btn fb">f</button>
+                                <button class="share-btn wa">w</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Consolidated Halawa Card -->
+                <div class="product-card" data-category="halawa" data-id="6">
+                    <div class="product-img">
+                        <img src="https://i.postimg.cc/65kWHTr1/IMG_0716.jpg" alt="حلاوة الزرافة" referrerPolicy="no-referrer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>حلاوة الزرافة</h3>
+                        <p class="available-flavors">الأطعمة المتوفرة: سادة، بالفستق الحلبي، بالكاكاو، بالقزحة</p>
+                        <p>حلاوة طحينية فاخرة بمختلف النكهات الأصيلة التي تناسب جميع الأذواق.</p>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(125)</span>
+                            </div>
+                            <div class="share-btns">
+                                <button class="share-btn fb">f</button>
+                                <button class="share-btn wa">w</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Qizha -->
+                <div class="product-card" data-category="other" data-id="10">
+                    <div class="product-img">
+                        <img src="https://i.postimg.cc/gJKBKCk6/IMG-0942.png" alt="قزحة الزرافة" referrerPolicy="no-referrer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>قزحة</h3>
+                        <p>طحينة حبة البركة الأصلية المركزة واللذيذة.</p>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(27)</span>
+                            </div>
+                            <div class="share-btns">
+                                <button class="share-btn fb">f</button>
+                                <button class="share-btn wa">w</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sesame Oil -->
+                <div class="product-card" data-category="oil" data-id="11">
+                    <div class="product-img">
+                        <img src="https://i.postimg.cc/28VycPP3/IMG_0634.jpg" alt="زيت سمسم" referrerPolicy="no-referrer" loading="lazy">
+                    </div>
+                    <div class="product-info">
+                        <h3>زيت سمسم</h3>
+                        <p>زيت سمسم نقي ١٠٠٪ معصور على البارد.</p>
+                        <div class="product-meta">
+                            <div class="rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="count">(19)</span>
+                            </div>
+                            <div class="share-btns">
+                                <button class="share-btn fb">f</button>
+                                <button class="share-btn wa">w</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sizes Table -->
+            <div class="sizes-section reveal">
+                <h3 class="section-title giraffe-accent"><img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="" class="title-icon"> أحجام التعبئة المتاحة</h3>
+                <div class="table-responsive">
+                    <table class="sizes-table">
+                        <thead>
+                            <tr>
+                                <th>الحجم</th>
+                                <th>نوع العبوة</th>
+                                <th>الاستخدام</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>400 غرام</td>
+                                <td>مرطبان بلاستيك</td>
+                                <td>منزلي</td>
+                            </tr>
+                            <tr>
+                                <td>900 غرام</td>
+                                <td>مرطبان بلاستيك</td>
+                                <td>منزلي / مطاعم صغيرة</td>
+                            </tr>
+                            <tr>
+                                <td>1.5 لتر</td>
+                                <td>زجاج بلاستيك</td>
+                                <td>مطاعم</td>
+                            </tr>
+                            <tr>
+                                <td>3 كغ</td>
+                                <td>سطل بلاستيك</td>
+                                <td>مطاعم / مخابز</td>
+                            </tr>
+                            <tr class="highlight-row">
+                                <td>15 كغ</td>
+                                <td>تنكة (جملة)</td>
+                                <td>تجارة جملة / توريد كبير</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wholesale Section -->
+    <section id="wholesale" class="wholesale">
+        <div class="container wholesale-container reveal">
+            <div class="wholesale-content reveal-right">
+                <h2 class="section-title giraffe-accent"><img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="" class="title-icon"> شريكك الموثوق في التوريد</h2>
+                <p>ندعو تجار الجملة، الموزعين، وأصحاب المطاعم لبناء شراكة طويلة الأمد معنا. نضمن لكم ثبات الجودة، دقة المواعيد، وأسعاراً تنافسية تدعم نمو أعمالكم.</p>
+                <ul class="wholesale-perks">
+                    <li class="reveal-scale">توصيل سريع لكافة المناطق</li>
+                    <li class="reveal-scale delay-1">أسعار خاصة للكميات الكبيرة</li>
+                    <li class="reveal-scale delay-2">دعم فني واستشاري للمنتجات</li>
+                </ul>
+                <a href="https://wa.me/970595033600" class="btn btn-accent reveal-scale delay-3">تواصل لطلب الجملة</a>
+            </div>
+            <div class="wholesale-img reveal-left">
+                <img src="https://i.postimg.cc/pXprGgg1/IMG_1144.jpg" alt="تعبئة الجملة" class="rounded-img" referrerPolicy="no-referrer">
+            </div>
+        </div>
+    </section>
+
+    <!-- Delivery Section -->
+    <section id="delivery" class="delivery">
+        <div class="container delivery-container reveal">
+            <div class="delivery-img reveal-right">
+                <img src="https://i.postimg.cc/15fXCLLC/IMG_1132.jpg" alt="خدمة التوصيل" class="rounded-img" referrerPolicy="no-referrer">
+            </div>
+            <div class="delivery-content reveal-left">
+                <h2 class="section-title giraffe-accent"><img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="" class="title-icon"> خدمة التوصيل لكافة مدن الضفة الغربية</h2>
+                <p>نحرص في مصنع الزرافة على وصول منتجاتنا الطازجة إليكم أينما كنتم. نوفر خدمة توصيل سريعة وموثوقة تغطي كافة مدن وقرى الضفة الغربية، لنضمن بقاء طعم الأصالة قريباً منكم دائماً.</p>
+                <div class="delivery-features">
+                    <div class="delivery-feature-item reveal-scale">
+                        <span class="icon">🚚</span>
+                        <span>توصيل سريع وآمن</span>
+                    </div>
+                    <div class="delivery-feature-item reveal-scale delay-1">
+                        <span class="icon">📍</span>
+                        <span>تغطية شاملة لكافة المدن</span>
+                    </div>
+                    <div class="delivery-feature-item reveal-scale delay-2">
+                        <span class="icon">📦</span>
+                        <span>تغليف يضمن سلامة المنتج</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title giraffe-accent"><img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="" class="title-icon"> آراء عملائنا</h2>
+                <p class="section-subtitle">شهادات نعتز بها من زبائننا في كل مكان</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"طحينة الزرافة هي الأفضل بلا منازع. طعمها يذكرني بطحينة زمان، وقوامها مثالي للحمص والمتبل. دائماً موجودة في مطبخي."</p>
+                    </div>
+                    <div class="testimonial-user">
+                        <img src="https://picsum.photos/seed/user1/100/100" alt="أحمد النابلسي" referrerPolicy="no-referrer">
+                        <div class="user-info">
+                            <h4>أحمد النابلسي</h4>
+                            <span>نابلس، فلسطين</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card reveal delay-1">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"الحلاوة بالفستق الحلبي خرافية! جربت أنواع كثيرة لكن دسامة وطعم حلاوة الزرافة غير. شكراً لكم على هذا المستوى من الجودة."</p>
+                    </div>
+                    <div class="testimonial-user">
+                        <img src="https://picsum.photos/seed/user2/100/100" alt="مريم الخليلي" referrerPolicy="no-referrer">
+                        <div class="user-info">
+                            <h4>مريم الخليلي</h4>
+                            <span>الخليل، فلسطين</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card reveal delay-2">
+                    <div class="testimonial-content">
+                        <div class="stars">★★★★★</div>
+                        <p>"زيت السمسم عندكم نقي جداً ورائحته قوية. أستخدمه في العلاج وفي الطبخ والنتائج دائماً مبهرة. فخورين بصناعتنا الوطنية."</p>
+                    </div>
+                    <div class="testimonial-user">
+                        <img src="https://picsum.photos/seed/user3/100/100" alt="أبو محمد من غزة" referrerPolicy="no-referrer">
+                        <div class="user-info">
+                            <h4>أبو محمد</h4>
+                            <span>غزة، فلسطين</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Feed Section -->
+    <section id="community" class="community">
+        <div class="container">
+            <div class="text-center reveal">
+                <h2 class="section-title giraffe-accent"><img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="" class="title-icon"> مجتمع الزرافة</h2>
+                <p class="section-subtitle">شاركونا لحظاتكم مع منتجاتنا عبر وسم #طحينة_الزرافة</p>
+            </div>
+
+            <div class="community-grid reveal">
+                <!-- Social Post 1 -->
+                <div class="community-item reveal-scale">
+                    <img src="https://i.postimg.cc/4NmyLrr6/IMG_1074.jpg" alt="Customer Photo 1" referrerPolicy="no-referrer">
+                    <div class="community-overlay">
+                        <div class="user-tag">@layla_kitchen</div>
+                        <p>أطيب فطور فلسطيني مع طحينة الزرافة الأصلية 🦒💛</p>
+                        <div class="social-icon">📸</div>
+                    </div>
+                </div>
+
+                <!-- Social Post 2 -->
+                <div class="community-item reveal-scale delay-1">
+                    <img src="https://i.postimg.cc/SNJRTwwd/IMG_1076.jpg" alt="Customer Photo 2" referrerPolicy="no-referrer">
+                    <div class="community-overlay">
+                        <div class="user-tag">@ahmad_foodie</div>
+                        <p>قوام الطحينة خيالي! جربوها مع الدبس 🍯</p>
+                        <div class="social-icon">📸</div>
+                    </div>
+                </div>
+
+                <!-- Social Post 3 -->
+                <div class="community-item reveal-scale delay-2">
+                    <img src="https://i.postimg.cc/yd27q9yb/IMG_1129.jpg" alt="Customer Photo 3" referrerPolicy="no-referrer">
+                    <div class="community-overlay">
+                        <div class="user-tag">@nablus_sweets</div>
+                        <p>الحلاوة بالفستق الحلبي من الزرافة.. طعم لا يقاوم!</p>
+                        <div class="social-icon">📸</div>
+                    </div>
+                </div>
+
+                <!-- Social Post 4 -->
+                <div class="community-item reveal-scale delay-3">
+                    <img src="https://i.postimg.cc/RVNhsjjg/IMG_1128.jpg" alt="Customer Photo 4" referrerPolicy="no-referrer">
+                    <div class="community-overlay">
+                        <div class="user-tag">@healthy_pal</div>
+                        <p>زيت السمسم الطبيعي 100%.. جودة نفتخر بها 🇵🇸</p>
+                        <div class="social-icon">📸</div>
+                    </div>
+                </div>
+
+                <!-- Social Post 5 -->
+                <div class="community-item reveal-scale delay-4">
+                    <img src="https://i.postimg.cc/sDvx6ttJ/IMG_1075.jpg" alt="Customer Photo 5" referrerPolicy="no-referrer">
+                    <div class="community-overlay">
+                        <div class="user-tag">@sara_bakes</div>
+                        <p>سر الكفتة الناجحة هو طحينة الزرافة الحمراء 🔥</p>
+                        <div class="social-icon">📸</div>
+                    </div>
+                </div>
+
+                <!-- Social Post 6 -->
+                <div class="community-item reveal-scale delay-5">
+                    <img src="https://i.postimg.cc/zXVvt99Q/IMG_1155.jpg" alt="Customer Photo 6" referrerPolicy="no-referrer">
+                    <div class="community-overlay">
+                        <div class="user-tag">@palestine_vibe</div>
+                        <p>الزرافة معك على طول.. في كل بيت فلسطيني 🦒</p>
+                        <div class="social-icon">📸</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-40 reveal">
+                <a href="#" class="btn btn-secondary">تابعونا على فيسبوك</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-details reveal">
+                    <h2 class="section-title giraffe-accent"><img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="" class="title-icon"> تواصل معنا</h2>
+                    <p>نحن هنا للإجابة على استفساراتكم وتلبية طلباتكم.</p>
+                    
+                    <div class="contact-item">
+                        <div class="icon">📍</div>
+                        <div class="text">
+                            <strong>الموقع:</strong>
+                            <span>فلسطين – نابلس، شارع بلاطة عسكر</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">📞</div>
+                        <div class="text">
+                            <strong>الهاتف:</strong>
+                            <span dir="ltr">0595033600</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">💬</div>
+                        <div class="text">
+                            <strong>واتساب:</strong>
+                            <span dir="ltr">+970595033600</span>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="icon">🕒</div>
+                        <div class="text">
+                            <strong>أوقات العمل:</strong>
+                            <span>السبت – الخميس | 7:00 ص – 6:00 م</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-btn fb">فيسبوك</a>
+                    </div>
+                </div>
+
+                <div class="contact-map reveal delay-1">
+                    <!-- Placeholder for Map UI -->
+                    <div class="map-placeholder">
+                        <div class="map-overlay">
+                            <h3>تفضلوا بزيارتنا</h3>
+                            <p>نابلس - شارع بلاطة عسكر</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-flex">
+            <div class="footer-brand">
+                <img src="https://i.postimg.cc/5ySp18tX/IMG-5561.png" alt="شعار الزرافة" class="footer-logo" referrerPolicy="no-referrer">
+                <p>الزرافة معك على طول. جودة فلسطينية أصيلة منذ 1964.</p>
+            </div>
+            <div class="footer-nav">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="#home">الرئيسية</a></li>
+                    <li><a href="#about">قصتنا</a></li>
+                    <li><a href="#products">المنتجات</a></li>
+                    <li><a href="#delivery">التوصيل</a></li>
+                    <li><a href="#wholesale">الجملة</a></li>
+                    <li><a href="#community">المجتمع</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>ابقَ على اتصال</h4>
+                <p>نابلس، فلسطين</p>
+                <p dir="ltr">+970 595 033 600</p>
+            </div>
+            <div class="footer-certs">
+                <h4>شهادات الجودة</h4>
+                <div class="certs-grid">
+                    <div class="cert-item" title="حلال">
+                        <span class="cert-icon">☪️</span>
+                        <span>حلال</span>
+                    </div>
+                    <div class="cert-item" title="ISO 9001">
+                        <span class="cert-icon">📜</span>
+                        <span>ISO 9001</span>
+                    </div>
+                    <div class="cert-item" title="المواصفات الفلسطينية">
+                        <span class="cert-icon">🇵🇸</span>
+                        <span>PSI</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2026 شركة مصنع الزرافة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/970595033600" class="whatsapp-float" target="_blank" aria-label="تواصل معنا عبر واتساب">
+        <div class="whatsapp-pulse"></div>
+        <svg viewBox="0 0 448 512" width="25" height="25" fill="white">
+            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-5.5-2.8-23.2-8.5-44.2-27.1-16.4-14.6-27.4-32.7-30.6-38.2-3.2-5.6-.3-8.6 2.4-11.3 2.5-2.4 5.5-6.5 8.3-9.7 2.8-3.3 3.7-5.5 5.5-9.2 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 13.2 5.8 23.5 9.2 31.5 11.8 13.3 4.2 25.4 3.6 35 2.2 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"/>
+        </svg>
+    </a>
+</body>
+</html>
